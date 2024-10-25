@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background-color: #222;
+        padding: 20px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #007bff;
+        color: #fff;
+    }
+    
+    .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    .hero form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .hero input {
+        padding: 10px;
+        width: 300px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .hero button {
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    
+    .features {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .features h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    .feature-item {
+        margin-bottom: 30px;
+    }
+    
+    .feature-item h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AB Downloader</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Download YouTube Videos with Ease</h1>
+        <p>Enter the YouTube video URL below to start downloading.</p>
+         <form id="downloadForm">
+        <label for="link">Video Link:</label>
+        <input type="url" id="link" name="link" required>
+        <br><br>
+        <button type="submit">Download Video</button>
+    </form>
+    <br>
+    <div id="result"></div>
+
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-item">
+            <h3>Fast Downloads</h3>
+            <p>Quickly download videos in various formats and qualities.</p>
+        </div>
+        <div class="feature-item">
+            <h3>High Quality</h3>
+            <p>Get videos in the highest possible resolution.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Easy to Use</h3>
+            <p>Simple and intuitive interface for a great user experience.</p>
+        </div>
+    </section>
+
+ 
+
+    <footer>
+        <p>&copy; 2024 YT Downloader. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
